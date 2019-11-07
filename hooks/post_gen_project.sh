@@ -16,3 +16,8 @@ npm install
 
 echo "    cd {{ cookiecutter.project_name }}"
 echo "    code ."
+
+echo "    run vscode extension"
+echo "    F5"
+echo "    ctrl+shift+p"
+echo "    {{ cookiecutter.ext_name }}"
