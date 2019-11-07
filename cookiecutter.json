@@ -1,6 +1,6 @@
 {
     "project_name": "vscode-demo",
-    "ext_name": "{{ cookiecutter.project_name }}",
+    "ext_name": "{{ cookiecutter.project_name|title()|replace('-', '')|replace(' ', '') }}",
     "description": "VSCode Demo",
     "version": "0.1.0",
     "publisher": "vscode",
