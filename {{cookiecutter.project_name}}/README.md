@@ -77,5 +77,5 @@ Added features X, Y, and Z.
 [install-badge]: https://img.shields.io/visual-studio-marketplace/i/{{ cookiecutter.publisher }}.{{ cookiecutter.project_name }}?style=flat-square
 [download-badge]: https://img.shields.io/visual-studio-marketplace/d/{{ cookiecutter.publisher }}.{{ cookiecutter.project_name }}?style=flat-square
 [size-badge]: https://img.shields.io/github/languages/code-size/{{ cookiecutter.code_hosting_username }}/{{ cookiecutter.project_name }}
-[license]: ./LLICENSE
+[license]: ./LICENSE
 [license-badge]: https://img.shields.io/github/license/{{ cookiecutter.code_hosting_username }}/{{ cookiecutter.project_name }}?style=flat-square
