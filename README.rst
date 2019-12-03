@@ -27,7 +27,14 @@ Usage
 
     $ cookiecutter https://github.com/caizhengxin/cookiecutter-vscode.git
 
-.. code:: console
+or
+
+.. code-block:: console
+
+    $ git clone https://github.com/caizhengxin/cookiecutter-vscode.git
+    $ cookiecutter cookiecutter-vscode
+
+.. code-block:: console
 
     project_name [vscode-demo]: vscode-test
     ext_name [vscode-test]:
