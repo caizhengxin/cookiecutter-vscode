@@ -1,0 +1,78 @@
+{
+	"name": "{{ cookiecutter.project_name }}",
+	"displayName": "{{ cookiecutter.ext_name }}",
+	"description": "{{ cookiecutter.description }}",
+	"version": "{{ cookiecutter.version }}",
+	"publisher": "{{ cookiecutter.publisher }}",
+	"author": {
+		"name": "{{ cookiecutter.author }}",
+		"email": "{{ cookiecutter.email }}",
+		"url": "https://{{ cookiecutter.code_hosting }}.com/{{ cookiecutter.code_hosting_username }}/"
+	},
+	"homepage": "https://{{ cookiecutter.code_hosting }}.com/{{ cookiecutter.code_hosting_username }}/{{ cookiecutter.project_name }}",
+	"license": "{{ cookiecutter.open_source_license }}",
+	"repository": {
+		"type": "git",
+		"url": "https://{{ cookiecutter.code_hosting }}.com/{{ cookiecutter.code_hosting_username }}/{{ cookiecutter.project_name }}"
+	},
+	"bugs": {
+		"url": "https://{{ cookiecutter.code_hosting }}.com/{{ cookiecutter.code_hosting_username }}/{{ cookiecutter.project_name }}/issues",
+		"email": "{{ cookiecutter.email }}"
+	},
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.39.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+        "{{ cookiecutter.project_name }}",
+        "{{ cookiecutter.ext_name }}"
+	],
+	"activationEvents": [
+		"*",
+		"onCommand:extension.{{ cookiecutter.ext_name }}"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "{{ cookiecutter.ext_name|title() }}",
+			"properties": {
+			}
+		},
+		"commands": [
+			{
+				"command": "extension.{{ cookiecutter.ext_name }}",
+				"title": "{{ cookiecutter.ext_name|title() }}"
+			}
+		],
+		"keybindings": [
+			{
+			  "command": "extension.{{ cookiecutter.ext_name }}",
+			  "key": "",
+			  "mac": "",
+			  "when": "editorTextFocus"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.39.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"tslint": "^5.12.1",
+		"vscode-test": "^1.2.0"
+	}
+}
