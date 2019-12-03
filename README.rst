@@ -2,6 +2,15 @@
 Cookiecutter Vscode
 ===================
 
+.. image:: https://img.shields.io/badge/cookiecutter-cookiecutter--vscode-greet.svg
+    :target: https://github.com/caizhengxin/cookiecutter-vscode/
+
+.. image:: https://img.shields.io/github/languages/code-size/caizhengxin/cookiecutter-vscode?style=flat-square
+    :target: https://github.com/caizhengxin/cookiecutter-vscode/
+
+.. image:: https://img.shields.io/github/license/caizhengxin/cookiecutter-vscode?style=flat-square&color=greet
+    :target: ./LICENSE
+
 Cookiecutter_ template for a Vscode extension.
 
 * Github repo: https://github.com/caizhengxin/cookiecutter-vscode/
